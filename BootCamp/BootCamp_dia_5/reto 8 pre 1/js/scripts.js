@@ -9,5 +9,6 @@ document.addEventListener('DOMContentLoaded', function(){
         const message = inputBox.value;
         /* console.log(message) */
         console.log('Dato Ingresado')
+        outputBox.textContent = message
     })
 })
