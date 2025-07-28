@@ -11,13 +11,14 @@
         <h1>Calculadora de Eficiencia Energética por Electrodomésticos</h1>
     </header>
     <main class="main">
+        <h3>En este espacio se realizará el cuestionario para el cálculo apropiado de su consumo, por lo que si lo realiza y envia los datos se tomara que acepta compartir con nosotros el manejo de los datos que nos comparte.</h3>
         <p>En este intento trataremos de recrear una calculadora que toma datos de una carpeta de datos y a traves de un cuestionario con JavaScript se tomaran los datos a comparar.</p>
         <p>En este punto se tendran en cuenta ciertos factores que nos ayudaran a recrear esta idea.</p>
         <div class="form_container">
-            <form action="">post</form>
-                <!-- Se pedira la información personal para ergistrar el quien realiza la encuesta. -->
-                <fieldset>
-                    <legend>Información Personal</legend>
+            <form action="" method="post"></form>
+                <!-- Se pedira la información personal para registrar el quien realiza la encuesta. -->
+                <fieldset class="info_personal">
+                    <legend class="legend">Información Personal</legend>
                     <!-- Se pedirá el nombre en un texto obligatorio -->
                     <label for="name">Nombre Completo para registrar datos: </label>
                     <input type="text" id="name" name="name" placeholder="Nombre Completo: " required>
@@ -31,10 +32,11 @@
                     <label for="gender">Genero </label>
                     <input type="radio" id="male" name="gender" value="male" required>Masculino
                     <input type="radio" id="fem" name="gender" value="fem" required>Femenino
+                    <input type="radio" id="other" name="gender" value="other" required>Otro
                     <br>
-<!--                     <input type="radio" id="helicoptero_apache" name="gender" value="helicoptero_apache" required>Helicoptero Apache -->
+                    <!-- <input type="radio" id="helicoptero_apache" name="gender" value="helicoptero_apache" required>Helicoptero Apache -->
                      <label for="Ubication">Ubicación</label>
-                     <input type="text" id="ubication" name="ubication" placeholder="Ubicación ciudad,departamento,País">
+                     <input type="location" id="location" name="location" placeholder="Ubicación ciudad,departamento,País">
 
                 </fieldset>
 
@@ -42,6 +44,7 @@
 
     </main>
     <script src="js/scripts.js"></script>
-    <footer></footer>
+    <footer>Creado por Grupo de trabajo de la Calculadora de Eficiencia Energética <a href="mailto:gyohand.perdomo@udea.edu.co" class="email">gyohand.perdomo@udea.edu.co</a> <br> Bootcamp Talento Tech Region 2 - 
+    2025</footer>
 </body>
 </html>
