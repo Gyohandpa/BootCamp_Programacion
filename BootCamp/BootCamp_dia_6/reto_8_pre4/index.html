@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Suma de dos números</title>
+    <title>Operación de dos números</title>
 </head>
 <body>
     <Header>
@@ -14,7 +14,10 @@
         <input type="number" id="number1" name="number1" placeholder="Escriba el primer número" required>
         <input type="number" id="number2" name="number2" placeholder="Escriba el segundo número" required>
         <br>
-        <button id="addButton">Sumar</button>
+        <button onclick="calcular('sumar')">➕</button>
+        <button onclick="calcular('restar')">➖</button>
+        <button onclick="calcular('multiplicar')">✖</button>
+        <button onclick="calcular('dividir')">➗</button>
         <div id="resultText">
 
         </div>
