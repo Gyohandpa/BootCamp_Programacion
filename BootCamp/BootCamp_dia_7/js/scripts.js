@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         {
                             label: 'Suramerica',
                             data: filteredData.filter(item => item.Region === 'Suramerica').map(item => item.Renovable),
-                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderColor: 'rgba(54, 162, 255, 1)',
                             backgroundColor: 'rgba(60, 180, 255, 0.6)',
                             fill: false,
                             borderWidth: 1,
