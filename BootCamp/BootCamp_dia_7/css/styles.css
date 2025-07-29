@@ -44,7 +44,8 @@ header {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    line-height: 140%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .grafico h2 {
     text-align: center;
@@ -53,6 +54,9 @@ header {
 canvas {
     margin: 0 auto;
     display: grid;
+    min-width: 80%;
+    max-width: 90%;
+    height: 90%;
 }
 .footer {
     background-color: #006bb3;
