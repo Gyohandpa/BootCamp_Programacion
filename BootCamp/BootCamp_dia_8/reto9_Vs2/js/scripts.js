@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         if (error) throw error;
 
-        createBarChart('graficobarrasRegiones', data, 'region', 'promedio_renovables', 'Porcentaje de Energía Renovable por Regió', 'rgba(54, 162, 235, 0.6)');
+        createBarChart('graficoBarrasRegiones', data, 'region', 'promedio_renovables', 'Porcentaje de Energía Renovable', 'rgba(54, 162, 235, 0.6)');
 
         //Funcion para crear grafico de barras
-        function createBarChart(CanvasId, data, labelField, dataField, label, backgrupondColor) {
+        function createBarChart(CanvasId, data, labelField, dataField, label, backgroundColor) {
             const ctx =document.getElementById(canvasId).getContext('2d');
             new Chart(ctx, {
                 type: 'bar',
@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                     datasets: [{
                         label: label,
                         data: data.map(item => item[dataField]),
-                        backgroundColor: backgrupondColor,
-                        borderColor: ' backgroundColor.replace("0.6", "1")',
+                        backgroundColor: backgroundColor,
+                        borderColor: backgroundColor.replace("0.6", "1"),
                         borderWidth: 1,
                     }]
                 },
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                             x: {
                                 title: {
                                     display: true,
-                                    text: canvasId.includes('Paises') ? 'Países' : 'Regiones'
+                                    text: canvasId.includes('Países') ? 'Países' : 'Regiones'
                                 }
                             }
                         }
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             .lte('anno',2021)
             .order('anno', { ascending: true });
             if (error) throw error;
-            //Procesar los daros que vienen de la Consulta
+            //Procesar los datos que vienen de la Consulta
             const colombiaData = data.filter(item => item.region === 'Colombia');
             const suramericaData = data.filter(item => item.region === 'Suramerica');
             const years = [...new Set(data.map(item => item.anno))];
