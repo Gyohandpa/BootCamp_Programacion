@@ -6,7 +6,7 @@ goto(0, -40)
 
 for i in range(16):
     for j in range(18):
-        color(#FFFFFF), rt(90)
+        color('#FFFFFF'), rt(90)
         circle(150-j*6,90), lt(90)
         circle(150-j*6,90), lt(180)
     circle(40,24)
