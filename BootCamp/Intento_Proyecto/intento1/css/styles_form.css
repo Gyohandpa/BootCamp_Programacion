@@ -33,6 +33,7 @@ body {
     padding: 15px;
     width: 50%;
     margin: 20px auto;
+    margin-bottom: 80px;
 }
 .footer {
     background-color: #034876;
@@ -47,5 +48,10 @@ body {
 .email {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+.opcion {
+    display: block;
+    margin: 2px 0;
     font-weight: bold;
 }
