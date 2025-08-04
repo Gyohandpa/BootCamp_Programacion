@@ -40,7 +40,7 @@
 
                 </fieldset>
                 <fieldset class="info_personal">
-                    <legend>¿Tiene alguno de estos Electrodomésticos?</legend>
+                    <legend class="legend">¿Tiene alguno de estos Electrodomésticos?</legend>
                     <label for="nevera" class="opcion">Nevera</label>
                     <select name="nevera" id="nevera" required>
                         <option value="">Seleccione una opción</option>
@@ -81,6 +81,21 @@
                     </select>
                     <label for="lavadora2" class="opcion" id="lavadora2" style="display: none;">Cuantas lavadoras tiene: </label>
                     <input type="number" id="lavadora_2" name="lavadora2" placeholder="Cantidad de lavadoras" disabled style="display: none;">
+                    <!-- Vamos con los televisores -->
+                     <label for="televisor" class="opcion">Televisor</label>
+                    <select name="tevisor" id="televisor" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                    <label for="televisor1" class="opcion" id="televisor1" style="display: none;">Que tipo de consumo tiene su Televisor: </label>
+                    <select name="televisor1" id="televisor_1" disabled style="display: none;">
+                        <option value="">Seleccione una opción </option>
+                        <option value="alto">Alto Consumo</option>
+                        <option value="bajo">Bajo Consumo</option>
+                    </select>
+                    <label for="televisor2" class="opcion" id="televisor2" style="display: none;">Cuantos televisores tiene: </label>
+                    <input type="number" id="televisor_2" name="televisor2" placeholder="Cantidad de televisores" disabled style="display: none;">
                 </fieldset>
 
         </div>

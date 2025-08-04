@@ -14,7 +14,8 @@ body {
     z-index: 1;
 }
 .header {
-    background-color: cadetblue;
+    background-color: #034876;
+    color: #fff;
     z-index: 3;
     text-align: center;
     justify-content: center;
@@ -53,5 +54,10 @@ body {
 .opcion {
     display: block;
     margin: 2px 0;
+    font-weight: bold;
+}
+.legend {
+    font-size: 1.2em;
+    color: #034876;
     font-weight: bold;
 }

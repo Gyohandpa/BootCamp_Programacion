@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const lavadora_1 = document.getElementById("lavadora_1");
     const lavadora2 = document.getElementById("lavadora2");
     const lavadora_2 = document.getElementById("lavadora_2");
-
+    const televisor = document.getElementById("televisor");
+    const televisor1 = document.getElementById("televisor1");
+    const televisor_1 = document.getElementById("televisor_1");
+    
 
     nevera.addEventListener("change", function() {
         if (this.value === 'si') {
@@ -53,6 +56,28 @@ document.addEventListener("DOMContentLoaded", function() {
             lavadora_2.disabled = true;
             lavadora_2.style.display = 'none';
             lavadora2.style.display = 'none';
+        }
+    });
+    televisor.addEventListener("change", function() {
+        if (this.value === 'si') {
+            televisor_1.disabled= false;
+            televisor_1.style.display = 'block';
+            televisor1.style.display = 'block';
+        } else {
+            televisor_1.disabled = true;
+            televisor_1.style.display = 'none';
+            televisor1.style.display = 'none';
+        }
+    });
+    televisor_1.addEventListener("change", function() {
+        if (this.value !== '') {
+            televisor_2.disabled= false;
+            televisor_2.style.display = 'block';
+            televisor2.style.display = 'block';
+        } else {
+            televisor_2.disabled = true;
+            televisor_2.style.display = 'none';
+            televisor2.style.display = 'none';
         }
     });
 });
