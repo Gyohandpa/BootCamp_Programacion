@@ -12,6 +12,37 @@ document.addEventListener("DOMContentLoaded", function() {
     const televisor = document.getElementById("televisor");
     const televisor1 = document.getElementById("televisor1");
     const televisor_1 = document.getElementById("televisor_1");
+    const plancha = document.getElementById("plancha");
+    const plancha1 = document.getElementById("plancha1");
+    const plancha_1 = document.getElementById("plancha_1");
+    const planchavap = document.getElementById("planchavap");
+    const planchavap1 = document.getElementById("planchavap1");
+    const planchavap_1 = document.getElementById("planchavap_1");
+    const micro = document.getElementById("micro");
+    const micro1 = document.getElementById("micro1");
+    const micro_1 = document.getElementById("micro_1");
+    const aire = document.getElementById("aire");
+    const aire1 = document.getElementById("aire1");
+    const aire_1 = document.getElementById("aire_1");
+    const aire2 = document.getElementById("aire2");
+    const aire_2 = document.getElementById("aire_2");
+    const freidora = document.getElementById("freidora");
+    const freidora1 = document.getElementById("freidora1");
+    const freidora_1 = document.getElementById("freidora_1");
+    const licuadora = document.getElementById("licuadora");
+    const licuadora1 = document.getElementById("licuadora1");
+    const licuadora_1 = document.getElementById("licuadora_1");
+    const ventilador = document.getElementById("ventilador");
+    const ventilador1 = document.getElementById("ventilador1");
+    const ventilador_1 = document.getElementById("ventilador_1");
+    const ventilador2 = document.getElementById("ventilador2");
+    const ventilador_2 = document.getElementById("ventilador_2");
+    const arroz = document.getElementById("arroz");
+    const arroz1 = document.getElementById("arroz1");
+    const arroz_1 = document.getElementById("arroz_1");
+    const arroz2 = document.getElementById("arroz2");
+    const arroz_2 = document.getElementById("arroz_2");
+
     
 
     nevera.addEventListener("change", function() {
@@ -80,4 +111,125 @@ document.addEventListener("DOMContentLoaded", function() {
             televisor2.style.display = 'none';
         }
     });
+    plancha.addEventListener("change", function() {
+        if (this.value === 'si') {
+            plancha_1.disabled= false;
+            plancha_1.style.display = 'block';
+            plancha1.style.display = 'block';
+        } else {
+            plancha_1.disabled = true;
+            plancha_1.style.display = 'none';
+            plancha1.style.display = 'none';
+        }
+    });
+    planchavap.addEventListener("change", function() {
+        if (this.value === 'si') {
+            planchavap_1.disabled= false;
+            planchavap_1.style.display = 'block';
+            planchavap1.style.display = 'block';
+        } else {
+            planchavap_1.disabled = true;
+            planchavap_1.style.display = 'none';
+            planchavap1.style.display = 'none';
+        }
+    });
+    micro.addEventListener("change", function() {
+        if (this.value === 'si') {
+            micro_1.disabled= false;
+            micro_1.style.display = 'block';
+            micro1.style.display = 'block';
+        } else {
+            micro_1.disabled = true;
+            micro_1.style.display = 'none';
+            micro1.style.display = 'none';
+        }
+    });
+    aire.addEventListener("change", function() {
+        if (this.value === 'si') {
+            aire_1.disabled= false;
+            aire_1.style.display = 'block';
+            aire1.style.display = 'block';
+        } else {
+            aire_1.disabled = true;
+            aire_1.style.display = 'none';
+            aire1.style.display = 'none';
+        }
+    });
+    aire_1.addEventListener("change", function() {
+        if (this.value !== '') {
+            aire_2.disabled= false;
+            aire_2.style.display = 'block';
+            aire2.style.display = 'block';
+        } else {
+            aire_2.disabled = true;
+            aire_2.style.display = 'none';
+            aire2.style.display = 'none';
+        }
+    });
+    freidora.addEventListener("change", function() {
+        if (this.value === 'si') {
+            freidora_1.disabled= false;
+            freidora_1.style.display = 'block';
+            freidora1.style.display = 'block';
+        } else {
+            freidora_1.disabled = true;
+            freidora_1.style.display = 'none';
+            freidora1.style.display = 'none';
+        }
+    });
+    licuadora.addEventListener("change", function() {
+        if (this.value === 'si') {
+            licuadora_1.disabled= false;
+            licuadora_1.style.display = 'block';
+            licuadora1.style.display = 'block';
+        } else {
+            licuadora_1.disabled = true;
+            licuadora_1.style.display = 'none';
+            licuadora1.style.display = 'none';
+        }
+    });
+    ventilador.addEventListener("change", function() {
+        if (this.value === 'si') {
+            ventilador_1.disabled= false;
+            ventilador_1.style.display = 'block';
+            ventilador1.style.display = 'block';
+        } else {
+            ventilador_1.disabled = true;
+            ventilador_1.style.display = 'none';
+            ventilador1.style.display = 'none';
+        }
+    });
+    ventilador_1.addEventListener("change", function() {
+        if (this.value !== '') {
+            ventilador_2.disabled= false;
+            ventilador_2.style.display = 'block';
+            ventilador2.style.display = 'block';
+        } else {
+            ventilador_2.disabled = true;
+            ventilador_2.style.display = 'none';
+            ventilador2.style.display = 'none';
+        }
+    });
+    arroz.addEventListener("change", function() {
+        if (this.value === 'si') {
+            arroz_1.disabled= false;
+            arroz_1.style.display = 'block';
+            arroz1.style.display = 'block';
+        } else {
+            arroz_1.disabled = true;
+            arroz_1.style.display = 'none';
+            arroz1.style.display = 'none';
+        }
+    });
+    arroz_1.addEventListener("change", function() {
+        if (this.value !== '') {
+            arroz_2.disabled= false;
+            arroz_2.style.display = 'block';
+            arroz2.style.display = 'block';
+        } else {
+            arroz_2.disabled = true;
+            arroz_2.style.display = 'none';
+            arroz2.style.display = 'none';
+        }
+    });    
 });
