@@ -20,31 +20,74 @@
                 <fieldset class="info_personal">
                     <legend class="legend">Información Personal</legend>
                     <!-- Se pedirá el nombre en un texto obligatorio -->
-                    <label for="name">Nombre Completo para registrar datos: </label>
+                    <label for="name" class="opcion">Nombre Completo para registrar datos: </label>
                     <input type="text" id="name" name="name" placeholder="Nombre Completo: " required>
                     <br>
-                    <label for="email">Cor
-                    <label for="id">Numero de Identificación ID: </label>
+                    <label for="id" class="opcion">Numero de Identificación ID: </label>
                     <input type="number" id="id" name="id" placeholder="Numero de Identificación Id: " required>
-                    <br>reo Electrónico</label>
+                    <br>
+                    <label for="email" class="opcion">Correo Electrónico</label>
                     <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
                     <br>
-                    <label for="gender">Genero </label>
+                    <label for="gender" class="opcion">Genero </label>
                     <input type="radio" id="male" name="gender" value="male" required>Masculino
                     <input type="radio" id="fem" name="gender" value="fem" required>Femenino
                     <input type="radio" id="other" name="gender" value="other" required>Otro
                     <br>
                     <!-- <input type="radio" id="helicoptero_apache" name="gender" value="helicoptero_apache" required>Helicoptero Apache -->
-                     <label for="Ubication">Ubicación</label>
+                     <label for="Ubication" class="opcion">Ubicación</label>
                      <input type="location" id="location" name="location" placeholder="Ubicación ciudad,departamento,País">
 
+                </fieldset>
+                <fieldset class="info_personal">
+                    <legend>¿Tiene alguno de estos Electrodomésticos?</legend>
+                    <label for="nevera" class="opcion">Nevera</label>
+                    <select name="nevera" id="nevera" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                    <label for="nevera1" class="opcion" id="nevera1" style="display: none;">Que tipo de consumo tiene su nevera: </label>
+                    <select name="nevera1" id="nevera_1" disabled style="display: none;">
+                        <option value="">Seleccione una opción </option>
+                        <option value="a">tipo A</option>
+                        <option value="b">tipo B</option>
+                        <option value="c">tipo C</option>
+                        <option value="d">tipo D</option>
+                        <option value="e">tipo E</option>
+                        <option value="f">tipo F</option>
+                        <option value="g">tipo G</option>                        
+                    </select>
+                    <label for="nevera2" class="opcion" id="nevera2" style="display: none;">Cuantas neveras tiene: </label>
+                    <input type="number" id="nevera_2" name="nevera2" placeholder="Cantidad de neveras" disabled style="display: none;">
+                    <br>
+                    <!-- Ya teniendo las opciones de nevera vamos por las opciones de Lavadoras -->
+                    <label for="lavadora" class="opcion">Lavadora</label>
+                    <select name="lavadora" id="lavadora" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                    <label for="lavadora1" class="opcion" id="lavadora1" style="display: none;">Que tipo de consumo tiene su Lavadora: </label>
+                    <select name="lavadora1" id="lavadora_1" disabled style="display: none;">
+                        <option value="">Seleccione una opción </option>
+                        <option value="a">tipo A</option>
+                        <option value="b">tipo B</option>
+                        <option value="c">tipo C</option>
+                        <option value="d">tipo D</option>
+                        <option value="e">tipo E</option>
+                        <option value="f">tipo F</option>
+                        <option value="g">tipo G</option>                        
+                    </select>
+                    <label for="lavadora2" class="opcion" id="lavadora2" style="display: none;">Cuantas lavadoras tiene: </label>
+                    <input type="number" id="lavadora_2" name="lavadora2" placeholder="Cantidad de lavadoras" disabled style="display: none;">
                 </fieldset>
 
         </div>
 
     </main>
     <script src="js/scripts.js"></script>
-    <footer>Creado por Grupo de trabajo de la Calculadora de Eficiencia Energética <a href="mailto:gyohand.perdomo@udea.edu.co" class="email">gyohand.perdomo@udea.edu.co</a> <br> Bootcamp Talento Tech Region 2 - 
+    <footer class="footer">Creado por Grupo de trabajo de la Calculadora de Eficiencia Energética <a href="mailto:eficienciaenergeticatng@gmail.com" class="email">eficienciaenergeticatng@gmail.com</a> <br> Bootcamp Talento Tech Region 2 - 
     2025</footer>
 </body>
 </html>
