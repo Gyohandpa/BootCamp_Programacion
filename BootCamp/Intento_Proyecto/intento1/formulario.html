@@ -17,7 +17,7 @@
         <div class="form_container">
             <form action="" method="post"></form>
                 <!-- Se pedira la información personal para registrar el quien realiza la encuesta. -->
-                <fieldset class="info_personal">
+                <fieldset class="info_personal" id="info_personal">
                     <legend class="legend">Información Personal</legend>
                     <!-- Se pedirá el nombre en un texto obligatorio -->
                     <label for="name" class="opcion">Nombre Completo para registrar datos: </label>
@@ -199,6 +199,10 @@
                     <label for="arroz2" class="opcion" id="arroz2" style="display: none;">Cuantas arroceras tiene: </label>
                     <input type="number" id="arroz_2" name="arroz2" placeholder="Cantidad de arroceras" disabled style="display: none;">
                     <br>
+                </fieldset>
+                <fieldset class="info_personal" id="fieldsetButton">
+                    <legend class="legendButton">Enviar para calcular</legend>
+                    <button type="button" class="button" id="formButton">Calcular</button>
                 </fieldset>
 
         </div>

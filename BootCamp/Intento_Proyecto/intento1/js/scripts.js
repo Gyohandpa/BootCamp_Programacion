@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const nevera = document.getElementById("nevera");
     const nevera1 = document.getElementById("nevera1");
