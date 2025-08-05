@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     //AUTENTICACIÓN ANONIMA
     await supabase.auth.signInAnonymously();
     //Ejecutar todas las funciones
-    fetchTop20Paises();
-    fetchTopRegiones();
-    fetchColombiaVsSuramerica();
+    fetchtop20Paises();
+    fetchtopRegiones();
+    fetchcolombia_SurAmerica();
 
 
     //Gráfico de Barras del Top 20 de Países con Mayor Porcentaje de Energía Renovable
-    async function fetchTop20Paises() {
+    async function fetchtop20Paises() {
         const { data, error } = await supabase
             .from('top_20_paises')
             .select('*')
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
     //Gráfico de Barras de Producción de Energía Renovable por Regiones
 
-    async function fetchTopRegiones() {
+    async function fetchtopRegiones() {
         const { data, error } = await supabase
             .from('top_regiones')
             .select('*')
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             })
         }
         //Grafica comparativa de lineas
-        async function fetchColombiaVsSuramerica() {
+        async function fetchcolombia_SurAmerica() {
             const { data, error } = await supabase
             .from('colombia_suramerica_3')
             .select('*')
