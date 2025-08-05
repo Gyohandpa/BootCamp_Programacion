@@ -4,7 +4,7 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 document.addEventListener('DOMContentLoaded', async function () {
     //AUTENTICACIÓN ANONIMA
-    await supabase.auth.signInAnonimously();
+    await supabase.auth.signInAnonymously();
     //Ejecutar todas las funciones
     fetchTop20Paises();
     fetchTopRegiones();
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 })
         }
     }
-    });
+});
 
 /*         fetch('data/top20Paises.json')
             .then(response => response.json())
